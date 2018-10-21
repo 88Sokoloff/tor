@@ -2,6 +2,7 @@
 <html lang="uk">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>TORnet</title>
 	<!-- Favicon -->
 	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -12,11 +13,18 @@
 	<meta name="msapplication-TileColor" content="#0e115f">
 	<meta name="theme-color" content="#ffffff">
 
-	<link rel="stylesheet" href="css/main.css">
+	<link type="text/css" rel="stylesheet" href="/css/libs.css">
+	<link type="text/css" rel="stylesheet" href="/css/fonts.css">
+	<link type="text/css" rel="stylesheet" href="/css/main.css">
+
+	<script src="js/libs.min.js"></script>
+	<script src="js/script.js"></script>
 </head>
 <body>
 	<div class="container">
 		<header>
+			<div class="header_bg_l"></div>
+			<div class="headeer_bg_r"></div>
 			<div class="wrap">
 				<a href="#" class="header_left">
 					<img src="/img/logo.png" alt="TORnet" class="logo">
@@ -176,5 +184,13 @@
 			</div>
 		</footer>
 	</div>
+	<script>
+		$(document).ready(function(){
+			function initSlider(){
+				var sl = new Swiper('.swiper-container');
+			}
+			initSlider();
+		});
+	</script>
 </body>
 </html>

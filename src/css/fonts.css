@@ -1,0 +1,16 @@
+@font-face {
+    font-family: "FedraSansPro";
+    src: url('../fonts/FedraSansPro.otf');
+}
+@font-face {
+    font-family: "FedraSansProBold";
+    src: url('../fonts/FedraSansProBold.otf');
+}
+@font-face {
+    font-family: "FedraSansProBook";
+    src: url('../fonts/FedraSansProBook.otf');
+}
+@font-face {
+    font-family: "FedraSansProMedium";
+    src: url('../fonts/FedraSansProMedium.otf');
+}

@@ -29,7 +29,8 @@ gulp.task('css-libs', ['stylus'], function(){
 gulp.task('scripts', function(){
 	return gulp.src([
 		'src/js/libs/jquery/dist/jquery.min.js',
-		'src/js/libs/magnific-popup/dist/jquery.magnific-popup.min.js'
+		'src/js/libs/magnific-popup/dist/jquery.magnific-popup.min.js',
+		'src/js/libs/swiper/dist/js/swiper.min.js'
 		])
 		.pipe(concat('libs.min.js'))
 		.pipe(uglify())

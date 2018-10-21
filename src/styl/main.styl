@@ -1,2 +1,46 @@
+html
+	font-size 10px
 body
-	background darkblue
+	background #f1fbff
+	font-family FedraSansPro, sans-serif
+	color #1c1e20
+	
+*
+    box-sizing border-box
+    font-weight normal
+    margin 0
+    padding 0
+    text-decoration none
+*:focus
+	outline none
+
+.container
+	width 100%
+	height 100%
+.wrap
+	width 90%
+	max-width 1024px
+	margin 0 auto
+header
+	position relative
+	
+.header_bg_l,
+.header_bg_r
+	position absolute
+	top 0
+	width 15rem
+	height 100%
+	background url(../img/header_bg_l.png) no-repeat
+.header_bg_l
+	left 0
+.header_bg_r
+	right 0
+	background-image url(../img/header_bg_r.png)
+header .wrap
+	display flex
+	justify-content space-between
+.logo
+	height 6rem
+	margin 1rem 0
+
+		
