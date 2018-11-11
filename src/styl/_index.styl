@@ -1,0 +1,336 @@
+.container
+	width 100%
+	height 100%
+.wrap
+	position relative
+	width 90%
+	max-width 1300px
+	margin 0 auto
+header
+	position relative
+	
+.header_bg_l
+.header_bg_r
+	position absolute
+	top 0
+	width 15rem
+	height 100%
+	background url(../img/header_bg_l.png) no-repeat
+.header_bg
+	&_l
+		left 0
+		pointer-events none
+	&_r
+		right 0
+		background-image url(../img/header_bg_r.png)
+		pointer-events none
+header
+	.wrap
+		display flex
+		justify-content space-between
+.logo
+	height 5rem
+	margin 1rem 0
+.header_right
+	display flex
+	align-items center
+.header_contacts
+	display inline-block
+	width 33rem
+	margin-top 1rem
+	&__tel
+	&__email
+		position relative
+		display inline-block
+		width 40%
+		margin 0 2rem 1rem 0
+		color #0e115f
+		text-decoration none
+		&::before
+			content ''
+			position absolute
+			top 0.1rem
+			left -2.5rem
+			width 1.7rem
+			height 1.8rem
+			background url(../img/contacts_sprite.png) no-repeat
+			background-position -40px 0
+		&:first-child::before
+			background-position 0 0
+	&__email
+		color #cb542a
+		text-decoration underline
+		&::before
+			top .4rem
+			left -3rem
+			width 2.3rem
+			height 2rem
+			background-position -75px 0
+		&:hover
+			text-decoration none
+.header_btns
+	display inline-block
+.header_btn
+	position relative
+	display inline-block
+	padding 10px 20px 10px 40px
+	font-family FedraSansProBook, sans-serif
+	color #fff
+	background-color #8daf03
+	border-top-left-radius 12px
+	border-bottom-right-radius 12px
+	transform skewX(-12deg)
+	transition all .3s ease
+	&:hover
+		background-color #657d03
+	span
+		position relative
+		z-index 1
+		display inline-block
+		transform skewX(12deg)
+		&::before
+			content ''
+			position absolute
+			top 0
+			left -20px
+			width 18px
+			height 18px
+			background url(../img/user_sprite.png) no-repeat
+	&:nth-child(2)
+		left -15px
+		z-index 2
+		background-color #cb542a
+		&:hover
+			background-color #9a3a18
+		span::before
+			top 1px
+			background-position -36px 0
+	&:nth-child(3)
+		left -30px
+		background-color #56a4d4
+		&:hover
+			background-color #306586
+		span::before
+			top 2px
+			background-position -72px 0
+				
+.nav_top
+	background-image url(../img/bg_menu.jpg)
+	.wrap
+		display flex
+		justify-content space-between
+.nav_lk
+	position relative
+	color #fff
+	text-transform uppercase
+	line-height 50px
+	&::after
+		content ''
+		position absolute
+		bottom 1rem
+		left auto
+		right 0
+		width 0
+		height 2px
+		background-color #fff
+		transition all .3s ease
+	&:hover::after
+		left 0
+		right auto
+		width 100%
+
+/* Slider */
+.slider
+	width 100%
+	overflow hidden
+.slide_pic
+	width 100%
+.swiper-button-next,
+.swiper-button-prev
+	width 2.5rem
+	height 2.5rem
+	border 3px solid #77201c
+	border-top none
+	border-right none
+	background-image none
+	transform rotate(45deg)
+.swiper-button-next
+	transform rotate(45deg) scale(-1)
+.slide
+	&_pic + 
+		.wrap
+			position absolute
+			top 0
+			left 0
+			right 0
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			align-items center
+			height 100%
+	&_info
+		width 40rem
+	&_title
+		font 4.8rem FedraSansProMedium, sans-serif
+		color #77201d
+		span
+			font 6.2rem FedraSansProBold, sans-serif
+			color #75bce9
+	&_txt
+		margin 1rem 0
+	&_btn
+		display inline-block
+		padding .5rem 1.5rem
+		background-color #0f1160
+		border 2px solid #0f1160
+		border-radius 3px
+		font 1.8rem FedraSansProMedium, sans-serif
+		color #fff
+		text-transform uppercase
+		transition all .3s ease
+		&:hover
+			background-color #fff
+			color #0f1160
+	
+.advantages
+	position relative
+	z-index 1
+	background linear-gradient(to bottom, rgba(128,51,193,.1), rgba(219,140,251,.1))
+	background-position 0 50%
+	background-size 100% 85%
+	background-repeat no-repeat
+	transform translateY(-50%)
+	.adv
+		&_items
+			display -webkit-flex
+			display -moz-flex
+			display -ms-flex
+			display -o-flex
+			display flex
+			justify-content space-around
+			align-items center
+			padding 3rem 5rem
+			background-color #fff
+			border-radius 3px
+			box-shadow 0 0 5px 0 #ccc
+		&_item
+			position relative
+			margin-left 5rem
+			font-family FedraSansProMedium, sans-serif
+			text-transform uppercase
+			&::before
+				content ''
+				position absolute
+				top -.75rem
+				left -7rem
+				width 6rem
+				height 5.8rem
+				background url(../img/sl_sprite.png) no-repeat
+				background-position 0 50%
+			&:nth-child(2)::before
+				background-position -79px 50%
+			&:nth-child(3)::before
+				background-position -157px 50%
+			&:nth-child(4)::before
+				background-position -241px 50%
+			&:nth-child(5)::before
+				background-position -319px 50%
+				
+/* News and promotions */
+.news
+	.wrap
+		display grid
+		grid-template-columns 1fr 1fr
+		grid-template-rows 7rem 1fr
+		grid-gap 2rem
+	&_title
+		grid-column 1 / span 2
+		font 3.2rem/7rem FedraSansProMedium, sans-serif
+		text-transform uppercase
+		text-align center
+	&_bl
+		display grid
+		grid-template-columns 1fr 1fr
+		grid-template-rows 1fr 1fr 5rem
+		grid-gap 2rem
+		.new
+			position relative
+			background-color #fff
+			border-radius 3px
+			box-shadow 0 0 5px 0 #ccc
+			overflow hidden
+			transition all .3s ease
+			&:hover
+				box-shadow 0 0 10px 0 #666
+			&_img
+				float left
+				width 36%
+				height 100%
+				object-fit cover
+			&_date
+				margin 2rem 1rem 0rem 40%
+				font-size 1.3rem
+				color #959595
+			&_txt
+				margin 1rem 1rem 5rem 40%
+				color #555
+				text-transform uppercase
+			&_details
+				position absolute
+				bottom 2rem
+				right 1rem
+				font 1.3rem FedraSansProMedium, sans-serif
+				color #0f1160
+				text-transform uppercase
+				&:hover
+					text-decoration underline
+			&_more_wr
+				grid-column 1 / span 2
+				text-align center
+			&_more
+				position relative
+				display inline-block
+				padding .5rem 3rem .5rem 1.5rem
+				border 2px solid #0f1160
+				background-color #0f1160
+				font 1.8rem FedraSansProMedium, sans-serif
+				color #fff
+				text-transform uppercase
+				transition all .3s ease
+				&::after
+					content ''
+					position absolute
+					top 1.15rem
+					right 1.5rem
+					width .7rem
+					height .7rem
+					border 2px solid #fff
+					border-top none
+					border-left none
+					transform rotate(-45deg)
+					transition all .3s ease
+				&:hover
+					background-color transparent
+					color #0f1160
+					&::after
+						border-color #0f1160
+.promo
+	display grid
+	grid-template-columns 1fr 1fr
+	grid-template-rows 1fr 5rem
+	grid-gap 2rem
+	&_bl
+		position relative
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		border-radius 3px
+		background-image url(../img/img_promo1.jpg)
+		background-size cover	
+		color #fff
+		box-shadow 0 0 5px 0 #ccc
+		

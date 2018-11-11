@@ -1,0 +1,19 @@
+html {
+  font-size: 10px;
+}
+body {
+  background: $main_bg;
+  font: 1.4rem $font;
+  color: $font_color;
+}
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+*:focus {
+  outline: none;
+}
