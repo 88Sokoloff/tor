@@ -425,6 +425,8 @@ header .wrap {
   display: inline-block;
   padding: 0.5rem 3rem 0.5rem 1.5rem;
   border: 2px solid #0f1160;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
   background-color: #0f1160;
   font: 1.8rem FedraSansProMedium, sans-serif;
   color: #fff;
@@ -480,4 +482,122 @@ header .wrap {
   color: #fff;
   -webkit-box-shadow: 0 0 5px 0 #ccc;
           box-shadow: 0 0 5px 0 #ccc;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.promo_bl:hover {
+  -webkit-box-shadow: 0 0 5px 0 #666;
+          box-shadow: 0 0 5px 0 #666;
+}
+.promo_info {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 2rem;
+}
+.promo_info__b {
+  -webkit-align-self: flex-end;
+      -ms-flex-item-align: end;
+          align-self: flex-end;
+}
+.promo_info__t {
+  text-align: center;
+}
+.promo_txt {
+  text-align: center;
+}
+.promo_txt__color {
+  display: inline-block;
+  padding: 0.4rem;
+  background-color: #a43430;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  font: 1.8rem FedraSansProMedium, sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.promo_txt__color:hover {
+  background-color: #772421;
+}
+.promo_title {
+  font: 2.85rem FedraSansProMedium, sans-serif;
+  text-transform: uppercase;
+  text-align: center;
+}
+.promo_btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.4rem;
+  -webkit-align-self: center;
+      -ms-flex-item-align: center;
+          align-self: center;
+  background-color: #597e1f;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  font: 1.8rem FedraSansProMedium, sans-serif;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.promo_btn:hover {
+  background-color: #39530f;
+}
+.promo_more_wr {
+  grid-column: 1/span 2;
+  text-align: center;
+}
+.promo_more {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 3rem 0.5rem 1.5rem;
+  border: 2px solid #0f1160;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #0f1160;
+  font: 1.8rem FedraSansProMedium, sans-serif;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.promo_more::after {
+  content: '';
+  position: absolute;
+  top: 1.15rem;
+  right: 1.5rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  border: 2px solid #fff;
+  border-top: none;
+  border-left: none;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.promo_more:hover {
+  background-color: transparent;
+  color: #0f1160;
+}
+.promo_more:hover::after {
+  border-color: #0f1160;
+}
+footer {
+  background-color: #0b0b30;
+}
+footer .wrap {
+  padding: 2rem 2rem 2rem 5rem;
+}
+.footer_l {
+  float: left;
+}
+.footer_r {
+  float: right;
 }

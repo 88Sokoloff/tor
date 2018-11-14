@@ -294,6 +294,7 @@ header
 				display inline-block
 				padding .5rem 3rem .5rem 1.5rem
 				border 2px solid #0f1160
+				border-radius 3px
 				background-color #0f1160
 				font 1.8rem FedraSansProMedium, sans-serif
 				color #fff
@@ -333,4 +334,83 @@ header
 		background-size cover	
 		color #fff
 		box-shadow 0 0 5px 0 #ccc
-		
+		transition all .3s ease
+		&:hover
+			box-shadow 0 0 5px 0 #666
+	&_info
+		height fit-content
+		padding 2rem
+		&__b
+			align-self flex-end
+		&__t
+			text-align center
+	&_txt
+		text-align center
+		&__color
+			display inline-block
+			padding .4rem
+			background-color #a43430
+			border-radius 3px
+			font 1.8rem FedraSansProMedium, sans-serif
+			text-transform uppercase
+			transition all .3s ease
+			&:hover
+				background-color #772421
+	&_title
+		font 2.85rem FedraSansProMedium, sans-serif
+		text-transform uppercase
+		text-align center
+	&_btn
+		display inline-block
+		margin-top 1rem
+		padding .4rem
+		align-self center
+		background-color #597e1f
+		border-radius 3px
+		font 1.8rem FedraSansProMedium, sans-serif
+		text-transform uppercase
+		transition all .3s ease
+		&:hover
+			background-color #39530f
+	&_more_wr
+		grid-column 1 / span 2
+		text-align center
+	&_more
+		position relative
+		display inline-block
+		padding .5rem 3rem .5rem 1.5rem
+		border 2px solid #0f1160
+		border-radius 3px
+		background-color #0f1160
+		font 1.8rem FedraSansProMedium, sans-serif
+		color #fff
+		text-transform uppercase
+		transition all .3s ease
+		&::after
+			content ''
+			position absolute
+			top 1.15rem
+			right 1.5rem
+			width .7rem
+			height .7rem
+			border 2px solid #fff
+			border-top none
+			border-left none
+			transform rotate(-45deg)
+			transition all .3s ease
+		&:hover
+			background-color transparent
+			color #0f1160
+			&::after
+				border-color #0f1160
+				
+/* footer */
+footer
+	background-color #0b0b30
+	.wrap
+		padding 2rem 2rem 2rem 5rem
+.footer
+	&_l
+		float left
+	&_r
+		float right
