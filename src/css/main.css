@@ -593,11 +593,117 @@ footer {
   background-color: #0b0b30;
 }
 footer .wrap {
-  padding: 2rem 2rem 2rem 5rem;
+  padding: 2rem 2rem 2rem 3rem;
 }
 .footer_l {
   float: left;
 }
+.footer_top {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.footer_logo {
+  max-width: 161px;
+  max-height: 44px;
+  margin-right: 1.5rem;
+}
+.footer_btn {
+  position: relative;
+  display: inline-block;
+  margin: 1rem 0.5rem;
+  padding: 1rem 2rem 1rem 5rem;
+  -webkit-border-radius: 2rem;
+          border-radius: 2rem;
+  background-color: #380928;
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer_btn:hover {
+  background-color: #200617;
+}
+.footer_btn::before {
+  content: '';
+  position: absolute;
+  top: 1rem;
+  left: 2rem;
+  width: 18px;
+  height: 18px;
+  background: url("../img/user_sprite.png") no-repeat;
+}
+.footer_nav_lk {
+  position: relative;
+  display: inline-block;
+  margin: 1rem;
+  font-size: 1.3rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+.footer_nav_lk::after {
+  content: '';
+  position: absolute;
+  bottom: -0.5rem;
+  left: auto;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #fff;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.footer_nav_lk:hover::after {
+  left: 0;
+  right: auto;
+  width: 100%;
+}
 .footer_r {
   float: right;
+}
+.footer_contacts__tel,
+.footer_contacts__email {
+  position: relative;
+  display: block;
+  margin: 0.5rem;
+  padding-left: 3rem;
+  color: #fff;
+}
+.footer_contacts__tel:hover,
+.footer_contacts__email:hover {
+  text-decoration: underline;
+}
+.footer_contacts__tel::before,
+.footer_contacts__email::before {
+  content: '';
+  position: absolute;
+  top: 0.1rem;
+  left: 0.5rem;
+  width: 1.7rem;
+  height: 1.8rem;
+  background: url("../img/contacts_sprite.png") no-repeat;
+  background-position: 0 -44px;
+}
+.footer_contacts__tel:nth-child(2)::before,
+.footer_contacts__email:nth-child(2)::before,
+.footer_contacts__tel:nth-child(3)::before,
+.footer_contacts__email:nth-child(3)::before {
+  background-position: -40px -44px;
+}
+.footer_contacts__email::before {
+  left: 0.3rem;
+  width: 2rem;
+  background-position: -78px -44px;
+}
+.coptright {
+  clear: both;
+  font: 1.1rem Tahoma;
+  color: #d5d5d5;
 }

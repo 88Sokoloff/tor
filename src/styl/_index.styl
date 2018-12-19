@@ -408,9 +408,89 @@ header
 footer
 	background-color #0b0b30
 	.wrap
-		padding 2rem 2rem 2rem 5rem
+		padding 2rem 2rem 2rem 3rem
 .footer
 	&_l
 		float left
+	&_top
+		display -webkit-flex
+		display -moz-flex
+		display -ms-flex
+		display -o-flex
+		display flex
+		align-items center
+	&_logo
+		max-width 161px
+		max-height 44px
+		margin-right 1.5rem
+	&_btn
+		position relative
+		display inline-block
+		margin 1rem .5rem
+		padding 1rem 2rem 1rem 5rem
+		border-radius 2rem
+		background-color #380928
+		color #fff
+		text-transform uppercase
+		&:hover
+			background-color #200617
+		&::before
+			content ''
+			position absolute
+			top 1rem
+			left 2rem
+			width 18px
+			height 18px
+			background url(../img/user_sprite.png) no-repeat
+	&_nav_lk
+		position relative
+		display inline-block
+		margin 1rem
+		font-size 1.3rem
+		color #fff
+		text-transform uppercase
+		&::after
+			content ''
+			position absolute
+			bottom -.5rem
+			left auto
+			right 0
+			width 0
+			height 2px
+			background-color #fff
+			transition all .3s ease
+		&:hover::after
+			left 0
+			right auto
+			width 100%
 	&_r
 		float right
+	&_contacts__tel,
+	&_contacts__email
+		position relative
+		display block
+		margin .5rem
+		padding-left 3rem
+		color #fff
+		&:hover
+			text-decoration underline
+		&::before
+			content ''
+			position absolute
+			top 0.1rem
+			left .5rem
+			width 1.7rem
+			height 1.8rem
+			background url(../img/contacts_sprite.png) no-repeat
+			background-position 0 -44px
+		&:nth-child(2)::before,
+		&:nth-child(3)::before
+			background-position -40px -44px
+	&_contacts__email::before
+		left .3rem
+		width 2rem
+		background-position -78px -44px
+.coptright
+	clear both
+	font 1.1rem Tahoma
+	color #d5d5d5
