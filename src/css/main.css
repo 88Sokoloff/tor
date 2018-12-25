@@ -27,6 +27,8 @@ body {
           background-size: cover;
   -webkit-border-radius: 3px;
           border-radius: 3px;
+  -webkit-box-shadow: 0 0 5px 0 #ccc;
+          box-shadow: 0 0 5px 0 #ccc;
   text-align: center;
 }
 .subscribe_title {
@@ -479,7 +481,7 @@ header .wrap {
   -webkit-border-radius: 3px;
           border-radius: 3px;
   background-color: #0f1160;
-  font: 1.8rem FedraSansProMedium, sans-serif;
+  font: 1.8rem FedraSansProMedium;
   color: #fff;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease;
@@ -801,6 +803,8 @@ footer .wrap {
   display: -ms-flexbox;
   display: flex;
   background-color: #fff;
+  -webkit-box-shadow: 0 0 5px 0 #ccc;
+          box-shadow: 0 0 5px 0 #ccc;
 }
 .promo_main_pic {
   width: 50%;
@@ -931,6 +935,8 @@ footer .wrap {
   display: -ms-flexbox;
   display: flex;
   background-color: #fff;
+  -webkit-box-shadow: 0 0 5px 0 #ccc;
+          box-shadow: 0 0 5px 0 #ccc;
 }
 .news_main_pic {
   width: 50%;
@@ -1073,4 +1079,90 @@ footer .wrap {
 .news_slider .swiper-pagination .swiper-pagination-bullet-active {
   background: #77201d;
   color: #fff;
+}
+.op_new {
+  margin: 5rem 0;
+}
+.op_new .wrap {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 4rem 1fr;
+  grid-gap: 3rem;
+}
+.op_new_lk {
+  position: relative;
+  display: inline-block;
+  padding: 0.5rem 1.5rem 0.5rem 3rem;
+  border: 2px solid #0f1160;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  background-color: #0f1160;
+  font: 1.8rem FedraSansProMedium;
+  color: #fff;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.op_new_lk:hover {
+  background-color: transparent;
+  color: #0f1160;
+}
+.op_new_lk:hover::before {
+  border-color: #0f1160;
+}
+.op_new_lk::before {
+  content: '';
+  position: absolute;
+  top: 1.15rem;
+  left: 1.5rem;
+  width: 0.7rem;
+  height: 0.7rem;
+  border: 2px solid #fff;
+  border-bottom: none;
+  border-right: none;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.op_new_wr {
+  grid-column: 1/span 3;
+  padding: 2.5rem 4rem 5rem;
+  background-color: #fff;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+  -webkit-box-shadow: 0 0 5px 0 #ccc;
+          box-shadow: 0 0 5px 0 #ccc;
+}
+.op_new_date {
+  margin: 0 0 1rem;
+  font-size: 1.3rem;
+  color: #959595;
+}
+.op_new_title {
+  margin: 1rem 0 2.5rem;
+  font: 2.6rem FedraSansProMedium;
+  color: #1e1e1e;
+}
+.op_new_img {
+  width: 100%;
+  margin: 2.5rem 0;
+}
+.op_new_txt {
+  color: #02294c;
+  line-height: 1.8;
+}
+.op_new_txt b {
+  font-family: FedraSansProBold;
+}
+.op_new_txt a {
+  color: #77201d;
+  text-decoration: underline;
+}
+.op_new_txt a:hover {
+  text-decoration: none;
 }

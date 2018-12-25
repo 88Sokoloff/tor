@@ -1,0 +1,61 @@
+.op_new
+	margin 5rem 0
+	.wrap
+		position relative
+		display grid
+		grid-template-columns 1fr 1fr 1fr 1fr
+		grid-template-rows 4rem 1fr
+		grid-gap 3rem
+	&_lk
+		position relative
+		display inline-block
+		padding .5rem 1.5rem .5rem 3rem
+		border 2px solid #0f1160
+		border-radius 3px
+		background-color #0f1160
+		font 1.8rem $font_medium
+		color #fff
+		text-transform uppercase
+		transition all .3s ease
+		&:hover
+			background-color transparent
+			color #0f1160
+			&::before
+				border-color #0f1160
+		&::before
+			content ''
+			position absolute
+			top 1.15rem
+			left 1.5rem
+			width .7rem
+			height .7rem
+			border 2px solid #fff
+			border-bottom none
+			border-right none
+			transform rotate(-45deg)
+			transition all .3s ease
+	&_wr
+		grid-column 1 / span 3
+		padding 2.5rem 4rem 5rem
+		background-color #fff
+		border-radius 3px
+		box-shadow 0 0 5px 0 #ccc
+	&_date
+		{bl_date}
+	&_title
+		margin 1rem 0 2.5rem
+		font 2.6rem $font_medium
+		color #1e1e1e
+	&_img
+		width 100%
+		margin 2.5rem 0
+	&_txt
+		color #02294c
+		line-height 1.8
+		b
+			font-family $font_bold
+		a
+			color $red_bg
+			text-decoration underline
+			&:hover
+				text-decoration none
