@@ -146,7 +146,9 @@ header .wrap {
   width: 1.7rem;
   height: 1.8rem;
   background: url("../img/contacts_sprite.png") no-repeat;
-  background-position: -40px 0;
+  -webkit-background-size: 9.8rem auto;
+          background-size: 9.8rem auto;
+  background-position: -4rem 0;
 }
 .header_contacts__tel:first-child::before,
 .header_contacts__email:first-child::before {
@@ -161,7 +163,7 @@ header .wrap {
   left: -3rem;
   width: 2.3rem;
   height: 2rem;
-  background-position: -75px 0;
+  background-position: -7.5rem 0;
 }
 .header_contacts__email:hover {
   text-decoration: none;
@@ -176,10 +178,8 @@ header .wrap {
   font-family: FedraSansProBook;
   color: #fff;
   background-color: #8daf03;
-  -webkit-border-top-left-radius: 12px;
-          border-top-left-radius: 12px;
-  -webkit-border-bottom-right-radius: 12px;
-          border-bottom-right-radius: 12px;
+  -webkit-border-radius: 12px 0 12px 0;
+          border-radius: 12px 0 12px 0;
   -webkit-transform: skewX(-12deg);
       -ms-transform: skewX(-12deg);
           transform: skewX(-12deg);
@@ -202,13 +202,15 @@ header .wrap {
   content: '';
   position: absolute;
   top: 0;
-  left: -20px;
-  width: 18px;
-  height: 18px;
+  left: -2rem;
+  width: 1.8rem;
+  height: 1.8rem;
   background: url("../img/user_sprite.png") no-repeat;
+  -webkit-background-size: 8.7rem auto;
+          background-size: 8.7rem auto;
 }
 .header_btn:nth-child(2) {
-  left: -15px;
+  left: -1.5rem;
   z-index: 2;
   background-color: #cb542a;
 }
@@ -217,18 +219,18 @@ header .wrap {
 }
 .header_btn:nth-child(2) span::before {
   top: 1px;
-  background-position: -36px 0;
+  background-position: -3.6rem 0;
 }
 .header_btn:nth-child(3) {
-  left: -30px;
+  left: -3rem;
   background-color: #56a4d4;
 }
 .header_btn:nth-child(3):hover {
   background-color: #306586;
 }
 .header_btn:nth-child(3) span::before {
-  top: 2px;
-  background-position: -72px 0;
+  top: 0.2rem;
+  background-position: -7.2rem 0;
 }
 .nav_top {
   background-image: url("../img/bg_menu.jpg");
@@ -247,7 +249,7 @@ header .wrap {
   position: relative;
   color: #fff;
   text-transform: uppercase;
-  line-height: 50px;
+  line-height: 5rem;
 }
 .nav_lk::after {
   content: '';
@@ -381,24 +383,26 @@ header .wrap {
 .advantages .adv_item::before {
   content: '';
   position: absolute;
-  top: -0.75rem;
+  top: -1rem;
   left: -7rem;
   width: 6rem;
   height: 5.8rem;
   background: url("../img/sl_sprite.png") no-repeat;
   background-position: 0 50%;
+  -webkit-background-size: 37.3rem auto;
+          background-size: 37.3rem auto;
 }
 .advantages .adv_item:nth-child(2)::before {
-  background-position: -79px 50%;
+  background-position: -7.9rem 50%;
 }
 .advantages .adv_item:nth-child(3)::before {
-  background-position: -157px 50%;
+  background-position: -15.7rem 50%;
 }
 .advantages .adv_item:nth-child(4)::before {
-  background-position: -241px 50%;
+  background-position: -24.1rem 50%;
 }
 .advantages .adv_item:nth-child(5)::before {
-  background-position: -319px 50%;
+  background-position: -31.9rem 50%;
 }
 .news_side .wrap {
   display: grid;
@@ -691,9 +695,18 @@ footer .wrap {
   position: absolute;
   top: 1rem;
   left: 2rem;
-  width: 18px;
-  height: 18px;
+  width: 1.8rem;
+  height: 1.8rem;
   background: url("../img/user_sprite.png") no-repeat;
+  -webkit-background-size: 8.7rem auto;
+          background-size: 8.7rem auto;
+}
+.footer_btn:nth-child(3)::before {
+  background-position: -3.5rem 0;
+}
+.footer_btn:nth-child(4)::before {
+  top: 1.3rem;
+  background-position: -7rem 0;
 }
 .footer_nav_lk {
   position: relative;
@@ -745,18 +758,20 @@ footer .wrap {
   width: 1.7rem;
   height: 1.8rem;
   background: url("../img/contacts_sprite.png") no-repeat;
-  background-position: 0 -44px;
+  -webkit-background-size: 9.8rem auto;
+          background-size: 9.8rem auto;
+  background-position: 0 -4.4rem;
 }
 .footer_contacts__tel:nth-child(2)::before,
 .footer_contacts__email:nth-child(2)::before,
 .footer_contacts__tel:nth-child(3)::before,
 .footer_contacts__email:nth-child(3)::before {
-  background-position: -40px -44px;
+  background-position: -4rem -4.4rem;
 }
 .footer_contacts__email::before {
   left: 0.3rem;
   width: 2rem;
-  background-position: -78px -44px;
+  background-position: -7.8rem -4.4rem;
 }
 .coptright {
   clear: both;
@@ -897,7 +912,7 @@ footer .wrap {
 }
 .news {
   position: relative;
-  background: url("../img/bg_promo.jpg") 50% 0% no-repeat;
+  background: url("../img/bg_news.jpg") 50% 0% no-repeat;
   -webkit-background-size: 100% 20rem;
           background-size: 100% 20rem;
 }
@@ -1165,4 +1180,206 @@ footer .wrap {
 }
 .op_new_txt a:hover {
   text-decoration: none;
+}
+.contacts {
+  position: relative;
+  height: -webkit-calc(100vh - 27.4rem);
+  height: calc(100vh - 27.4rem);
+  background: url("../img/bg_contacts.jpg") 50% 0% no-repeat;
+  -webkit-background-size: 100% 30rem;
+          background-size: 100% 30rem;
+}
+.contacts::before {
+  content: '';
+  position: absolute;
+  top: 26rem;
+  left: 0;
+  width: 100%;
+  height: 8rem;
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(224,145,254,0.1)), to(rgba(126,49,192,0.1)));
+  background: -webkit-linear-gradient(bottom, rgba(224,145,254,0.1), rgba(126,49,192,0.1));
+  background: -o-linear-gradient(bottom, rgba(224,145,254,0.1), rgba(126,49,192,0.1));
+  background: linear-gradient(to top, rgba(224,145,254,0.1), rgba(126,49,192,0.1));
+}
+.contacts .wrap {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  height: 100%;
+}
+.contacts_bl {
+  width: 45rem;
+  margin: 0 2.5rem 3rem;
+  padding: 3rem;
+  background-color: #fff;
+  -webkit-box-shadow: 0 0 5px 0 #ccc;
+          box-shadow: 0 0 5px 0 #ccc;
+}
+.contacts_bl_title {
+  margin: 0 2rem 3rem;
+  font: 2.8rem FedraSansProMedium;
+  color: #0e115f;
+  text-transform: uppercase;
+}
+.contacts_bl_subtitle {
+  margin: 2rem;
+  font: 1.8rem FedraSansProMedium;
+  color: #1c1c1c;
+}
+.contacts_bl_tel {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 0.5rem 2rem;
+  font-size: 2.8rem;
+  color: #77201d;
+}
+.contacts_bl_tel span {
+  font: 2.3rem FedraSansProBook;
+  color: #0e115f;
+}
+.contacts_bl_tel:nth-child(3) .contacts_bl_ico::after {
+  background-position: 0 -4.4rem;
+}
+.contacts_bl_ico {
+  position: relative;
+  width: 2.5rem;
+  height: 3rem;
+  margin-right: 1rem;
+  background-color: #0e115f;
+  -webkit-border-radius: 12px 0 12px 0;
+          border-radius: 12px 0 12px 0;
+  -webkit-transform: skewX(-12deg);
+      -ms-transform: skewX(-12deg);
+          transform: skewX(-12deg);
+}
+.contacts_bl_ico_highlighted {
+  background-color: #77201d;
+}
+.contacts_bl_ico::after {
+  content: '';
+  position: absolute;
+  top: 0.1rem;
+  left: 0.5rem;
+  width: 1.7rem;
+  height: 1.8rem;
+  background: url("../img/contacts_sprite.png") no-repeat;
+  -webkit-background-size: 9.8rem auto;
+          background-size: 9.8rem auto;
+  background-position: -4rem -4.4rem;
+  -webkit-transform: skewX(12deg);
+      -ms-transform: skewX(12deg);
+          transform: skewX(12deg);
+}
+.contacts_bl_email {
+  display: -webkit-inline-box;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin: 0.5rem 2rem;
+  font-size: 1.5rem;
+  color: #77201d;
+}
+.contacts_bl_email .contacts_bl_ico::after,
+.contacts_bl_email .contacts_bl_ico_highlighted::after {
+  left: 0.3rem;
+  width: 2rem;
+  background-position: -7.8rem -4.4rem;
+}
+.contacts_bl_highlighted {
+  padding: 1rem 2rem;
+  border: 1px solid #77201d;
+  -webkit-border-radius: 3px;
+          border-radius: 3px;
+}
+.contacts_bl_txt {
+  font-family: FedraSansProMedium;
+  color: #02294c;
+}
+.contacts_bl_soc {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contacts_bl_soc_ico {
+  position: relative;
+  width: 2.5rem;
+  height: 3rem;
+  margin-right: 1rem;
+  border: 1px solid #425796;
+  background-color: #425796;
+  -webkit-border-radius: 12px 0 12px 0;
+          border-radius: 12px 0 12px 0;
+  -webkit-transform: skewX(-12deg);
+      -ms-transform: skewX(-12deg);
+          transform: skewX(-12deg);
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+.contacts_bl_soc_ico:hover {
+  background-color: transparent;
+}
+.contacts_bl_soc_ico::after {
+  content: '';
+  position: absolute;
+  top: 0.1rem;
+  left: 0.5rem;
+  width: 1.7rem;
+  height: 1.8rem;
+  background: url("../img/ico_soc_sprite.png") no-repeat;
+  -webkit-background-size: 7.8rem auto;
+          background-size: 7.8rem auto;
+  background-position: 0 0;
+  -webkit-transform: skewX(12deg);
+      -ms-transform: skewX(12deg);
+          transform: skewX(12deg);
+}
+.contacts_bl_soc_ico.fb:hover::after {
+  background-position: 0 -3rem;
+}
+.contacts_bl_soc_ico.vk {
+  border-color: #48658c;
+  background-color: #48658c;
+}
+.contacts_bl_soc_ico.vk::after {
+  background-position: -2.3rem 0;
+}
+.contacts_bl_soc_ico.vk:hover::after {
+  background-position: -2.3rem -3rem;
+}
+.contacts_bl_soc_ico.google {
+  border-color: #b2504b;
+  background-color: #b2504b;
+}
+.contacts_bl_soc_ico.google::after {
+  background-position: -5.5rem 0;
+}
+.contacts_bl_soc_ico.google:hover::after {
+  background-position: -5.5rem -3rem;
+}
+@media screen and (max-width: 1400px), (max-height: 900px) {
+  html {
+    font-size: 8px;
+  }
 }

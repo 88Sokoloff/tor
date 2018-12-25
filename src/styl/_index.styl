@@ -54,7 +54,8 @@ header
 			width 1.7rem
 			height 1.8rem
 			background url(../img/contacts_sprite.png) no-repeat
-			background-position -40px 0
+			background-size 9.8rem auto
+			background-position -4rem 0
 		&:first-child::before
 			background-position 0 0
 	&__email
@@ -65,7 +66,7 @@ header
 			left -3rem
 			width 2.3rem
 			height 2rem
-			background-position -75px 0
+			background-position -7.5rem 0
 		&:hover
 			text-decoration none
 .header_btns
@@ -77,8 +78,7 @@ header
 	font-family $font_book
 	color #fff
 	background-color #8daf03
-	border-top-left-radius 12px
-	border-bottom-right-radius 12px
+	border-radius 12px 0 12px 0
 	transform skewX(-12deg)
 	transition all .3s ease
 	&:hover
@@ -92,27 +92,28 @@ header
 			content ''
 			position absolute
 			top 0
-			left -20px
-			width 18px
-			height 18px
+			left -2rem
+			width 1.8rem
+			height 1.8rem
 			background url(../img/user_sprite.png) no-repeat
+			background-size 8.7rem auto
 	&:nth-child(2)
-		left -15px
+		left -1.5rem
 		z-index 2
 		background-color #cb542a
 		&:hover
 			background-color #9a3a18
 		span::before
 			top 1px
-			background-position -36px 0
+			background-position -3.6rem 0
 	&:nth-child(3)
-		left -30px
+		left -3rem
 		background-color #56a4d4
 		&:hover
 			background-color #306586
 		span::before
-			top 2px
-			background-position -72px 0
+			top .2rem
+			background-position -7.2rem 0
 				
 .nav_top
 	background-image url(../img/bg_menu.jpg)
@@ -123,7 +124,7 @@ header
 	position relative
 	color #fff
 	text-transform uppercase
-	line-height 50px
+	line-height 5rem
 	&::after
 		content ''
 		position absolute
@@ -206,20 +207,21 @@ header
 			&::before
 				content ''
 				position absolute
-				top -.75rem
+				top -1rem
 				left -7rem
 				width 6rem
 				height 5.8rem
 				background url(../img/sl_sprite.png) no-repeat
 				background-position 0 50%
+				background-size 37.3rem auto
 			&:nth-child(2)::before
-				background-position -79px 50%
+				background-position -7.9rem 50%
 			&:nth-child(3)::before
-				background-position -157px 50%
+				background-position -15.7rem 50%
 			&:nth-child(4)::before
-				background-position -241px 50%
+				background-position -24.1rem 50%
 			&:nth-child(5)::before
-				background-position -319px 50%
+				background-position -31.9rem 50%
 				
 /* News and promotions */
 .news_side
@@ -404,9 +406,15 @@ footer
 			position absolute
 			top 1rem
 			left 2rem
-			width 18px
-			height 18px
+			width 1.8rem
+			height 1.8rem
 			background url(../img/user_sprite.png) no-repeat
+			background-size 8.7rem auto
+		&:nth-child(3)::before
+			background-position -3.5rem 0
+		&:nth-child(4)::before
+			top 1.3rem
+			background-position -7rem 0
 	&_nav_lk
 		position relative
 		display inline-block
@@ -447,14 +455,15 @@ footer
 			width 1.7rem
 			height 1.8rem
 			background url(../img/contacts_sprite.png) no-repeat
-			background-position 0 -44px
+			background-size 9.8rem auto
+			background-position 0 -4.4rem
 		&:nth-child(2)::before,
 		&:nth-child(3)::before
-			background-position -40px -44px
+			background-position -4rem -4.4rem
 	&_contacts__email::before
 		left .3rem
 		width 2rem
-		background-position -78px -44px
+		background-position -7.8rem -4.4rem
 .coptright
 	clear both
 	font 1.1rem Tahoma
