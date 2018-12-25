@@ -1,3 +1,80 @@
 $main_bg = #f1fbff
-$font = FedraSansPro, sans-serif
+$font = FedraSansPro
+$font_bold = FedraSansProBold
+$font_book = FedraSansProBook
+$font_medium = FedraSansProMedium
 $font_color = #1c1c1c
+$page_title_color = #0e115f
+$red_bg = #77201d
+
+page_title = @block {
+	display inline-block
+	margin 5rem 0 3rem
+	font 3rem $font_medium
+	color $page_title_color
+	text-transform uppercase
+}
+bl_date = @block {
+	margin 0 0 1rem
+	font-size 1.3rem
+	color #959595
+}
+main_bl_title = @block {
+	margin 1rem 0 2rem
+	font 2.6rem $font_medium
+	color #1e1e1e
+}
+main_bl_txt = @block {
+	height 16rem
+	margin-bottom 2rem
+	overflow-y scroll
+	font-size 1.6rem
+	color #02294c
+}
+lk_btn = @block {
+	display inline-block
+	padding .5rem 1.5rem
+	background-color #0f1160
+	border 2px solid #0f1160
+	border-radius 3px
+	font 1.8rem FedraSansProMedium, sans-serif
+	color #fff
+	text-transform uppercase
+	transition all .3s ease
+}
+lk_btn_h = @block {
+	background-color #fff
+	color #0f1160
+}
+lk_btn_arr = @block {
+	position relative
+	display inline-block
+	padding .5rem 3rem .5rem 1.5rem
+	border 2px solid #0f1160
+	border-radius 3px
+	background-color #0f1160
+	font 1.8rem FedraSansProMedium, sans-serif
+	color #fff
+	text-transform uppercase
+	transition all .3s ease
+}
+lk_btn_arr_h = @block {
+	background-color transparent
+	color #0f1160
+}
+lk_btn_arr_after = @block {
+	content ''
+	position absolute
+	top 1.15rem
+	right 1.5rem
+	width .7rem
+	height .7rem
+	border 2px solid #fff
+	border-top none
+	border-left none
+	transform rotate(-45deg)
+	transition all .3s ease
+}
+lk_btn_arr_after_h = @block {
+	border-color #0f1160
+}

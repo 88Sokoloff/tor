@@ -1,0 +1,7 @@
+Google Account:
+	name - Tornet Provider; email - tornetprovider@gmail.com; pass - tornet666Provider;
+Wordpress:
+	login - Admin; pass - tornet666Provider;
+SendPulse:
+	ID - 1e6ebe010a66aeae5a8c43150657bb64;
+	Secret - dd17fc39b49f8ec85e422a6e87f11cea;

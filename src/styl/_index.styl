@@ -74,7 +74,7 @@ header
 	position relative
 	display inline-block
 	padding 10px 20px 10px 40px
-	font-family FedraSansProBook, sans-serif
+	font-family $font_book
 	color #fff
 	background-color #8daf03
 	border-top-left-radius 12px
@@ -163,36 +163,23 @@ header
 			top 0
 			left 0
 			right 0
-			display -webkit-flex
-			display -moz-flex
-			display -ms-flex
-			display -o-flex
 			display flex
 			align-items center
 			height 100%
 	&_info
 		width 40rem
 	&_title
-		font 4.8rem FedraSansProMedium, sans-serif
+		font 4.8rem $font_medium
 		color #77201d
 		span
-			font 6.2rem FedraSansProBold, sans-serif
+			font 6.2rem $font_bold
 			color #75bce9
 	&_txt
 		margin 1rem 0
 	&_btn
-		display inline-block
-		padding .5rem 1.5rem
-		background-color #0f1160
-		border 2px solid #0f1160
-		border-radius 3px
-		font 1.8rem FedraSansProMedium, sans-serif
-		color #fff
-		text-transform uppercase
-		transition all .3s ease
+		{lk_btn}
 		&:hover
-			background-color #fff
-			color #0f1160
+			{lk_btn_h}
 	
 .advantages
 	position relative
@@ -204,10 +191,6 @@ header
 	transform translateY(-50%)
 	.adv
 		&_items
-			display -webkit-flex
-			display -moz-flex
-			display -ms-flex
-			display -o-flex
 			display flex
 			justify-content space-around
 			align-items center
@@ -218,7 +201,7 @@ header
 		&_item
 			position relative
 			margin-left 5rem
-			font-family FedraSansProMedium, sans-serif
+			font-family $font_medium
 			text-transform uppercase
 			&::before
 				content ''
@@ -239,7 +222,7 @@ header
 				background-position -319px 50%
 				
 /* News and promotions */
-.news
+.news_side
 	.wrap
 		display grid
 		grid-template-columns 1fr 1fr
@@ -247,7 +230,7 @@ header
 		grid-gap 2rem
 	&_title
 		grid-column 1 / span 2
-		font 3.2rem/7rem FedraSansProMedium, sans-serif
+		font 3.2rem/7rem $font_medium
 		text-transform uppercase
 		text-align center
 	&_bl
@@ -257,6 +240,7 @@ header
 		grid-gap 2rem
 		.new
 			position relative
+			display flex
 			background-color #fff
 			border-radius 3px
 			box-shadow 0 0 5px 0 #ccc
@@ -265,23 +249,23 @@ header
 			&:hover
 				box-shadow 0 0 10px 0 #666
 			&_img
-				float left
+				display inline-block
 				width 36%
 				height 100%
 				object-fit cover
+			&_desc
+				padding 2rem
 			&_date
-				margin 2rem 1rem 0rem 40%
-				font-size 1.3rem
-				color #959595
+				{bl_date}
 			&_txt
-				margin 1rem 1rem 5rem 40%
+				margin 1rem 0
 				color #555
 				text-transform uppercase
 			&_details
 				position absolute
 				bottom 2rem
 				right 1rem
-				font 1.3rem FedraSansProMedium, sans-serif
+				font 1.3rem $font_medium
 				color #0f1160
 				text-transform uppercase
 				&:hover
@@ -290,34 +274,14 @@ header
 				grid-column 1 / span 2
 				text-align center
 			&_more
-				position relative
-				display inline-block
-				padding .5rem 3rem .5rem 1.5rem
-				border 2px solid #0f1160
-				border-radius 3px
-				background-color #0f1160
-				font 1.8rem FedraSansProMedium, sans-serif
-				color #fff
-				text-transform uppercase
-				transition all .3s ease
+				{lk_btn_arr}
 				&::after
-					content ''
-					position absolute
-					top 1.15rem
-					right 1.5rem
-					width .7rem
-					height .7rem
-					border 2px solid #fff
-					border-top none
-					border-left none
-					transform rotate(-45deg)
-					transition all .3s ease
+					{lk_btn_arr_after}
 				&:hover
-					background-color transparent
-					color #0f1160
+					{lk_btn_arr_h}
 					&::after
-						border-color #0f1160
-.promo
+						{lk_btn_arr_after_h}
+.promo_side
 	display grid
 	grid-template-columns 1fr 1fr
 	grid-template-rows 1fr 5rem
@@ -337,6 +301,10 @@ header
 		transition all .3s ease
 		&:hover
 			box-shadow 0 0 5px 0 #666
+		&_title
+			font 2.85rem $font_medium
+			text-transform uppercase
+			text-align center
 	&_info
 		height fit-content
 		padding 2rem
@@ -351,15 +319,11 @@ header
 			padding .4rem
 			background-color #a43430
 			border-radius 3px
-			font 1.8rem FedraSansProMedium, sans-serif
+			font 1.8rem $font_medium
 			text-transform uppercase
 			transition all .3s ease
 			&:hover
 				background-color #772421
-	&_title
-		font 2.85rem FedraSansProMedium, sans-serif
-		text-transform uppercase
-		text-align center
 	&_btn
 		display inline-block
 		margin-top 1rem
@@ -367,7 +331,7 @@ header
 		align-self center
 		background-color #597e1f
 		border-radius 3px
-		font 1.8rem FedraSansProMedium, sans-serif
+		font 1.8rem $font_medium
 		text-transform uppercase
 		transition all .3s ease
 		&:hover
@@ -382,7 +346,7 @@ header
 		border 2px solid #0f1160
 		border-radius 3px
 		background-color #0f1160
-		font 1.8rem FedraSansProMedium, sans-serif
+		font 1.8rem $font_medium
 		color #fff
 		text-transform uppercase
 		transition all .3s ease
@@ -432,6 +396,7 @@ footer
 		background-color #380928
 		color #fff
 		text-transform uppercase
+		transition all .3s ease
 		&:hover
 			background-color #200617
 		&::before
