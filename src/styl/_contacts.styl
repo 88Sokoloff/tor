@@ -1,6 +1,6 @@
 .contacts
 	position relative
-	height calc(100vh - 27.4rem)
+	height calc(100vh - 27.2rem)
 	background url(../img/bg_contacts.jpg) 50% 0% no-repeat
 	background-size 100% 30rem
 	&::before
@@ -21,6 +21,7 @@
 		width 45rem
 		margin 0 2.5rem 3rem
 		padding 3rem
+		border-radius 3px
 		background-color #fff
 		box-shadow 0 0 5px 0 #ccc
 		&_title
@@ -28,8 +29,10 @@
 			font 2.8rem $font_medium
 			color $blue
 			text-transform uppercase
+			&__low
+				margin-bottom 1.25rem
 		&_subtitle
-			margin 2rem
+			margin .5rem 2rem
 			font 1.8rem $font_medium
 			color $font_color
 		&_tel
@@ -39,25 +42,32 @@
 			font-size 2.8rem
 			color $red_bg
 			span
+				margin-right .5rem
 				font 2.3rem	$font_book
 				color $blue
 			&:nth-child(3) .contacts_bl_ico::after
 				background-position 0 -4.4rem
+			&:hover .contacts_bl_ico
+				background-color $red_bg
 		&_ico
 			position relative
-			width 2.5rem
+			width 3rem
 			height 3rem
 			margin-right 1rem
 			background-color $blue
-			border-radius 12px 0 12px 0
+			border-radius 8px 0
 			transform skewX(-12deg)
+			transition all .3s
 			&_highlighted
 				background-color $red_bg
 			&::after
 				content ''
 				position absolute
-				top .1rem
-				left .5rem
+				top 0
+				bottom 0
+				left 0
+				right 0
+				margin auto
 				width 1.7rem
 				height 1.8rem
 				background url(../img/contacts_sprite.png) no-repeat
@@ -66,32 +76,44 @@
 				transform skewX(12deg)
 		&_email
 			display inline-flex
-			align-items flex-end
+			align-items center
 			margin .5rem 2rem
 			font-size 1.5rem
 			color $red_bg
 			.contacts_bl_ico::after,
 			.contacts_bl_ico_highlighted::after
-				left .3rem
+				top .3rem
 				width 2rem
 				background-position -7.8rem -4.4rem
+			&:hover .contacts_bl_ico
+				background-color $red_bg
 		&_highlighted
+			margin 2rem 0
 			padding 1rem 2rem
 			border 1px solid $red_bg
 			border-radius 3px
+			.contacts_bl_subtitle
+				margin .5rem 0
+			.contacts_bl_email
+				margin-left 0
+				&:hover .contacts_bl_ico
+					background-color $blue
 		&_txt
 			font-family $font_medium
 			color #02294c
 		&_soc
 			display flex
+			align-items center
+			.contacts_bl_txt
+				margin 0 1.5rem 0 2rem
 			&_ico
 				position relative
-				width 2.5rem
+				width 3rem
 				height 3rem
 				margin-right 1rem
 				border 1px solid #425796
 				background-color #425796
-				border-radius 12px 0 12px 0
+				border-radius 8px 0
 				transform skewX(-12deg)
 				transition all .3s ease
 				&:hover
@@ -99,27 +121,77 @@
 				&::after
 					content ''
 					position absolute
-					top .1rem
-					left .5rem
-					width 1.7rem
+					top 0
+					bottom 0
+					left 0
+					right 0
+					margin auto
+					width 1.75rem
 					height 1.8rem
 					background url(../img/ico_soc_sprite.png) no-repeat
 					background-size 7.8rem auto
-					background-position 0 0
+					background-position .5rem .1rem
 					transform skewX(12deg)
 				&.fb:hover::after
-					background-position 0 -3rem
+					background-position .5rem -2.9rem
 				&.vk
 					border-color #48658c
 					background-color #48658c
+					&:hover
+						background-color transparent
 					&::after
-						background-position -2.3rem 0
+						background-position -2.3rem .1rem
 					&:hover::after
-						background-position -2.3rem -3rem
+						background-position -2.3rem -2.7rem
 				&.google
 					border-color #b2504b
 					background-color #b2504b
+					&:hover
+						background-color transparent
 					&::after
-						background-position -5.5rem 0
+						width 2.5rem
+						background-position -5.5rem .1rem
 					&:hover::after
-						background-position -5.5rem -3rem
+						background-position -5.5rem -2.7rem
+		input, textarea
+			display inline-block
+			width 100%
+			margin .5rem 0 0rem
+			padding 1rem 0
+			border none
+			border-bottom 2px solid #c3cbd0
+			resize none
+			&[type="submit"]
+				display inherit
+				padding .8rem 4rem
+				width unset
+				border 2px solid #0f1160
+				border-radius 3px
+				background-color #0f1160
+				font 1.6rem $font_medium
+				color #fff
+				text-transform uppercase
+				cursor pointer
+				transition all .3s
+				&:hover
+					background-color #fff
+					color #0f1160
+			&::-webkit-input-placeholder
+				font 1.4rem $font
+			&:focus
+				border-color #75bce9
+				&::-webkit-input-placeholder
+					color transparent
+				+ label
+					color #75bce9
+					opacity 1
+		textarea
+			height 7.5rem
+			+ label
+				top -8.5rem
+		label
+			position relative
+			top -5.75rem
+			pointer-events none
+			opacity 0
+			transition all .3s ease-out

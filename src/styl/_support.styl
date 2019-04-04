@@ -1,0 +1,100 @@
+.support
+	display flex
+	justify-content center
+	flex-wrap wrap
+	position relative
+	padding 40rem 0 10rem
+	background url(../img/bg_support.jpg) 50% 0% no-repeat
+	background-size 100% 58rem
+	&::before
+		content: ''
+		position absolute
+		top 54rem
+		left 0
+		width 100%
+		height 8rem
+		background linear-gradient(to top, rgba(224,145,254,.1), rgba(126,49,192,.1))
+	
+.support_content_wr
+	position relative
+	width 86rem
+	padding 2rem 3rem
+	border-radius 3px
+	background-color #fff
+	box-shadow 0 0 5px 0 #ccc
+	
+.support_title
+	{page_title}
+	margin 0 0 2rem 3rem
+	
+.support_item
+	margin-bottom 1.5rem
+	
+.support_item_title
+	position relative
+	padding 1rem 2rem 1rem 7rem
+	background-color #802f2b
+	font 18px $font
+	color #fff
+	border-radius 12px 0 12px 0
+	transform skewX(-12deg)
+	transition all .3s ease
+	cursor pointer
+	.support_item_sign
+		position absolute
+		top 0
+		left 0
+		width 5rem
+		height 100%
+		background-color #a3413c
+		border-radius 12px 0 12px 0
+		transition all .3s ease
+		&::before,
+		&::after
+			position absolute
+			content ''
+			top 1rem
+			left 0
+			right 0
+			margin auto
+			width 2px
+			height 3rem
+			background-color #fff
+			transform skewX(12deg)
+			transition all .5s ease
+		&::after
+			transform rotate(90deg)
+	&:not(.show):hover .support_item_sign::before
+		transform rotate(180deg) skewX(12deg)
+	&:not(.show):hover .support_item_sign::after
+		transform rotate(270deg) skewX(0deg)
+	span:last-child
+		transform skewX(-12deg)
+	&.show
+		background-color $blue
+		.support_item_sign
+			background-color #5a5da9
+			&::before
+				transform rotate(90deg)
+				
+.support_content
+	padding 3rem 4rem
+	
+.support_content_title
+	margin-bottom 2rem
+	font 23px $font_medium
+	color #1e1e1e
+	
+.support_content_subtitle
+	margin-bottom .5rem
+	font 18px $font
+	color $red_bg
+	text-transform uppercase
+	
+.support_content_txt
+	font 14px $font
+	color #02294c
+	
+.support_content_img
+	margin-top 5rem
+	max-width 100%
